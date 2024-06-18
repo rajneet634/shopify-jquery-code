@@ -1,0 +1,9 @@
+/**************code for anchor tag click scrroll bt id not display on search bar ******************/
+     function focusOn(div,link=''){
+     //  alert(div);
+       if(div == 'company-history'){
+         window.location.href = link;
+       }
+       var scrollPos =  $('#'+div).offset().top;
+       $(window).scrollTop(scrollPos);
+}
